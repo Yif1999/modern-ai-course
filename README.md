@@ -30,6 +30,7 @@
 - `*.py`：实验脚本。
 - `configs/`：部分课程的实验配置。
 - `reports/` / `diagrams/`：课程报告或图示。
+- `assets/`：部分课程内的精选公开教学图。
 
 不会提交到公开仓库的内容包括：
 
@@ -84,4 +85,3 @@ python -m pip install manim
 ## 发布状态
 
 如果你要 fork 或重新发布本课程，建议先阅读 [PUBLISHING_CHECKLIST.md](PUBLISHING_CHECKLIST.md)，确认没有误提交数据、权重、缓存、密钥或本机运行产物。
-
