@@ -1,0 +1,9 @@
+{
+  "eval_name": "eval_smoke",
+  "prompts_path": "evals/prompts_zh.jsonl",
+  "max_new_tokens": 60,
+  "temperature": 0.8,
+  "top_k": 20,
+  "top_p": 0.95,
+  "seed": 2027
+}

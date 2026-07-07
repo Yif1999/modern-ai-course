@@ -1,0 +1,88 @@
+[
+  {
+    "source_name": "CHIME",
+    "source_type": "meme_explanation",
+    "enabled": true,
+    "loader": "github_json",
+    "url": "https://raw.githubusercontent.com/yuboxie/chime/main/data/chime_full.json",
+    "max_samples": 2000,
+    "notes": "中文互联网梗解释数据，小而干净。"
+  },
+  {
+    "source_name": "REILX/chinese-meme-description-dataset",
+    "source_type": "meme_explanation",
+    "enabled": true,
+    "loader": "hf_dataset",
+    "dataset_name": "REILX/chinese-meme-description-dataset",
+    "split": "train",
+    "text_fields": ["description"],
+    "max_samples": 2000,
+    "notes": "中文 meme 图片描述文本，本课只抽取 description 字段。"
+  },
+  {
+    "source_name": "LooksJuicy/ruozhiba",
+    "source_type": "humor_ruozhiba",
+    "enabled": true,
+    "loader": "hf_dataset",
+    "dataset_name": "LooksJuicy/ruozhiba",
+    "split": "train",
+    "text_fields": ["instruction", "output"],
+    "max_samples": 2000,
+    "notes": "弱智吧风格问答。"
+  },
+  {
+    "source_name": "hfl/ruozhiba_gpt4",
+    "source_type": "humor_ruozhiba",
+    "enabled": true,
+    "loader": "hf_dataset",
+    "dataset_name": "hfl/ruozhiba_gpt4",
+    "split": "train",
+    "text_fields": ["instruction", "input", "output"],
+    "max_samples": 2000,
+    "notes": "弱智吧问题的 GPT-4 回答，偏问答/解释风格。"
+  },
+  {
+    "source_name": "m-a-p/COIG-CQIA:douban",
+    "source_type": "chat_dialogue",
+    "enabled": true,
+    "loader": "hf_dataset",
+    "dataset_name": "m-a-p/COIG-CQIA",
+    "config_name": "douban",
+    "split": "train",
+    "text_fields": ["instruction", "input", "output"],
+    "max_samples": 1200,
+    "notes": "只使用 COIG-CQIA 的 douban 小样，避免引入全集。"
+  },
+  {
+    "source_name": "JunyuLu/ToxiCN_MM",
+    "source_type": "social_fun",
+    "enabled": true,
+    "loader": "hf_dataset",
+    "dataset_name": "JunyuLu/ToxiCN_MM",
+    "split": "train",
+    "text_fields": [],
+    "max_samples": 2000,
+    "decode_images": false,
+    "notes": "用户指定纳入；当前 HF 可见字段只有 image，本脚本会禁用图片解码并记录无可用文本。"
+  },
+  {
+    "source_name": "YZhao09/meme_chn",
+    "source_type": "meme_explanation",
+    "enabled": false,
+    "loader": "hf_dataset",
+    "dataset_name": "YZhao09/meme_chn",
+    "split": "train",
+    "max_samples": 500,
+    "notes": "图片数据约 1.4GB，本课默认关闭。"
+  },
+  {
+    "source_name": "MichiganNLP/Chumor",
+    "source_type": "humor_ruozhiba",
+    "enabled": false,
+    "loader": "hf_dataset",
+    "dataset_name": "MichiganNLP/Chumor",
+    "split": "train",
+    "max_samples": 1000,
+    "notes": "HF gated dataset，需要接受访问条件，本课默认关闭。"
+  }
+]

@@ -1,0 +1,12 @@
+numpy
+matplotlib
+mlx
+torch
+torchvision
+tokenizers
+datasets
+transformers
+fastapi
+uvicorn
+psutil
+

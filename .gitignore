@@ -1,0 +1,61 @@
+.DS_Store
+Thumbs.db
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Local environments
+.venv/
+venv/
+env/
+.env
+.env.*
+
+# Node / frontend generated files
+node_modules/
+dist/
+build/
+
+# Lesson-generated datasets, caches, model artifacts, and outputs
+**/data/
+**/outputs/
+**/media/
+**/cache/
+**/.cache/
+
+# Model / tensor / dataset artifacts
+*.npy
+*.npz
+*.safetensors
+*.pt
+*.pth
+*.pkl
+*.pickle
+*.bin
+*.onnx
+*.arrow
+*.parquet
+*.jsonl
+*.tar
+*.tar.gz
+*.tgz
+*.zip
+*.gz
+
+# Logs and local runtime state
+*.log
+training_log.txt
+training_log.jsonl
+status.json
+metrics.json
+
+# Manim temporary/render cache
+partial_movie_files/
+Tex/
+texts/
+
